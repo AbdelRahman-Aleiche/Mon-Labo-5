@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .main {
+    margin: auto;
+    max-width: 1200px;
+   
+  }
+
+  .header {
+    position: fixed;
+    top: 0px;
+    width: calc(min(100%, 1200px));
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    
+  }
+
+  .headerBuffer {
+    height: 75px;
+  }
+
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .box {
+    background-color: #B0C4DE;
+    font-size: 1em;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    
+   
+  }
+  .box1{
+    font-size: 1em;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+  }
+  
+
+  .box img {
+    width: 100%;
+    
+    
+   
+  }
+  img#image{
+    order: 2;
+    
+  }
+  p#phrase{
+    order: 1;
+    
+  }
+  
+
+  @media screen and (min-width: 800px) {
+    .boxContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .box {
+      flex: 1;
+      padding: 10px;
+      
+    }
+
+    .largeBox {
+      flex: 2 !important;
+    
+    }
+
+  }
+  .secondaryTitle{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: gray;
+    font-family: fantasy;
+    
+  }
+  .principalTitle{
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    font-family: fantasy;
+  }
+  .bottomSide {
+    position: fixed;
+    left: auto;
+    bottom: 0px;
+    width: calc(min(100%, 1200px));
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+}
+.bottomBuffer{
+    height: 10px;
+}
+
